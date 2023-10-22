@@ -1,0 +1,25 @@
+<!-- website/partials/archive_cards.html -->
+
+{% load static %}
+<section id="_archiveCards">
+  {% for category in categories %}
+    <section class="container">
+      <div class="row my-15">
+        <a href="/categories/{{ category.slug }}/"><h2 class="display-3 my-3">{{ category.name|title }}</h2></a>
+        {% for company in category.company_set.all %}
+          <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+            <div class="card mb-4 card-hover">
+              <div class="d-flex justify-content-between align-items-center p-4">
+                <div class="d-flex">
+                  <div class="ms-3">
+                    <h3 class="mb-1 h4"><a href="/companies/{{ company.slug }}/">{{ company.name }}</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</section>

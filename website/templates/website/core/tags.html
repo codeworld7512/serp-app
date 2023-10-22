@@ -1,0 +1,24 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+Topics | {{ website_name }}
+{% endblock %}
+
+
+{% block content %}
+<section id="_tags">
+  <section class="bg-primary">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+          <div class="py-4 py-lg-6">
+            <h1 class="mb-0 text-white display-4">Topics</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'website/partials/tag_cards.html' %}
+</section>
+{% endblock %}

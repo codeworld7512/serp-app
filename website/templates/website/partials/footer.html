@@ -1,0 +1,71 @@
+{% load static %}
+
+{% load static %}
+
+<footer class="pt-lg-5 pt-5 footer bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="mt-4">
+                    <a href="/"><img src="{% static 'website/images/brand/logo/logo-wordmark-serp_everything.svg' %}" alt="{{ website_name }} Logo" class="logo-inverse" /></a>
+                    <div class="mt-8">
+                        <div class="fs-3">
+                            <a href="https://serp.ly/@serpapp/facebook" target="_blank"><img src="{% static 'website/images/svg/facebook.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/instagram" target="_blank"><img src="{% static 'website/images/svg/instagram.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/twitter" target="_blank"><img src="{% static 'website/images/svg/twitter.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/linkedin" target="_blank"><img src="{% static 'website/images/svg/linkedin.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/pinterest" target="_blank"><img src="{% static 'website/images/svg/pinterest.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/github" target="_blank"><img src="{% static 'website/images/svg/github.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/discord" target="_blank"><img src="{% static 'website/images/svg/discord.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/reddit" target="_blank"><img src="{% static 'website/images/svg/reddit.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                            <a href="https://serp.ly/@serpapp/youtube" target="_blank"><img src="{% static 'website/images/svg/youtube.svg' %}" height="15" width="15" class="logo-inverse mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="mb-4">
+                    {% comment %} <h3 class="fw-bold mb-3">Browse</h3> {% endcomment %}
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        {% comment %} <li><a href="{% url 'website:about' %}" class="nav-link">About</a></li> {% endcomment %}
+                        {% comment %} <li><a href="/blog/" class="nav-link">Blog</a></li> {% endcomment %}
+                        {% comment %} <li><a href="/subscribe/" class="nav-link">Subscribe</a></li> {% endcomment %}
+                        <li><a href="{% url 'website:archive' %}" class="nav-link">Archive</a></li>
+                        {% comment %} <li><a href="#" class="nav-link">Links</a></li> {% endcomment %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12">
+                <div class="mb-4">
+                    {% comment %} <h3 class="fw-bold mb-3">Contribute</h3> {% endcomment %}
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        {% comment %} <li><a href="https://serp.ly/@serp/advertise" class="nav-link">Advertise</a></li> {% endcomment %}
+                        {% comment %} <li><a href="/contribute/" class="nav-link">Contribute</a></li> {% endcomment %}
+                        {% comment %} <li><a href="https://serp.ly/@serp/submit-correction" class="nav-link">Submit Correction</a></li> {% endcomment %}
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+                <div class="mb-4">
+                    {% comment %} <h3 class="fw-bold mb-3">Contact</h3> {% endcomment %}
+                    {% comment %} <p>1644 S. Main Street <br> Beverly Hills CA, 90210</p> {% endcomment %}
+                    {% comment %} <p>Phone: <span class="text-dark fw-semibold">(800) 867-5309</span></p> {% endcomment %}
+                </div>
+            </div>
+        </div>
+        <div class="container border-top mt-2">
+            <div class="row align-items-center g-0 py-2">
+                {% include 'website/partials/footer_dropup.html' %}
+                <div class="col-12 col-md-6">
+                    <nav class="nav nav-footer justify-content-center justify-content-md-end">
+                        <a class="nav-link active ps-0" href="/legal/privacy-policy/">Privacy</a>
+                        <a class="nav-link" href="/legal/terms-conditions/">Terms</a>
+                        <a class="nav-link" href="/legal/affiliate-disclosure/">Affiliate Disclosure</a>
+                        <a class="nav-link" href="/legal/dmca/">DMCA</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

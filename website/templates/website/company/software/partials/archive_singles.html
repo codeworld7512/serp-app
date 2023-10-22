@@ -1,0 +1,27 @@
+<!-- website/company/software/partials/archive_singles.html -->
+
+{% load static %}
+<div class="container col-md-8 col-lg-6"> 
+  <div class="table-responsive"> 
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">
+            <h2 class="mt-10"><a href="{% url 'website:company_index' %}">Directory</a></h2>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for software in softwares %}
+        <tr>
+          <td>
+            <a href="{% url 'website:company_single' slug=software.slug %}">
+              {{ software.name }}
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div> 
+</div> 

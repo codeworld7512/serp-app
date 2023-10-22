@@ -1,0 +1,32 @@
+# Docs
+
+## Adding Pagintation
+
+1. If you use views.py context variables as their names:
+    
+```python
+
+companies = Company.objects.all()
+
+context = {
+    'companies': companies,
+}
+
+```
+Then you include in templates like this:
+
+`{% include "website/partials/pagination.html" with items=companies %}`
+
+
+2. If you use views.py context variables as items:
+
+```python
+
+context = {
+    'items': companies,
+}
+
+```
+Then you include in templates like this:
+    
+`{% include "website/partials/pagination.html" with items=items %}`

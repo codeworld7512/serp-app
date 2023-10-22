@@ -1,0 +1,46 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+  Legal | {{ website_name }}
+{% endblock %}
+
+
+{% block content %}
+  <section id="_legal">
+    <section class="py-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="text-center">
+              <h1 class="display-3 fw-bold">Legal</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-7">
+            <ul>
+              <li>
+                <a href="/legal/privacy-policy/">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/legal/terms-conditions/">Terms of Service</a>
+              </li>
+              <li>
+                <a href="/legal/dmca/">DMCA & IP Complaints</a>
+              </li>
+              <li>
+                <a href="/legal/affiliate-disclosure/">Affiliate Disclosure</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+{% endblock %}
+
+

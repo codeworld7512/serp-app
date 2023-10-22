@@ -1,0 +1,50 @@
+{% load static %}
+<li class="dropdown ms-2 d-inline-block position-static">
+    <a class="rounded-circle" href="#" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+        <div class="avatar avatar-md avatar-indicators avatar-online">
+            <img alt="avatar" src="{% static 'website/images/avatar/avatar-1.jpg' %}" class="rounded-circle">
+        </div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end position-absolute mx-3 my-5">
+        <div class="dropdown-item">
+            <div class="d-flex">
+                <div class="avatar avatar-md avatar-indicators avatar-online">
+                    <img alt="avatar" src="{% static 'website/images/avatar/avatar-1.jpg' %}" class="rounded-circle">
+                </div>
+                <div class="ms-3 lh-1">
+                    <p class="mb-1" id="profile-nav-name">Rick Astley</p>
+                    <p class="mb-1" id="profile-nav-username" id="logged-in" hidden>@rickastley</p>
+                    <p class="mb-0 text-muted" id="profile-nav-email" id="logged-in">login@or.die</p>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <ul class="list-unstyled">
+            <li id="logged-in">
+                {% comment %} <a class="dropdown-item" href="{% url 'account:profile' %}" id="logged-in" hidden> {% endcomment %}
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Profile</a>
+            </li>
+            <li>
+                {% comment %} <a class="dropdown-item" href="{% url 'account:bookmarks' %}" id="logged-in" hidden> {% endcomment %}
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M3 12L15 12M3 12L7 8M3 12L7 16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Bookmarks</a>
+            </li>
+            <div class="dropdown-divider"></div>
+            {% comment %} <li id="logged-out"><a class="dropdown-item" id="register" href="{% url 'account:register' %}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> {% endcomment %}
+                        <path d="M20 18L14 18M17 15V21M4 21C4 17.134 7.13401 14 11 14C11.695 14 12.3663 14.1013 13 14.2899M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>Register</a></li>
+            {% comment %} <li id="logged-out"><a class="dropdown-item" id="login" href="{% url 'account:login' %}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> {% endcomment %}
+                        <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> Login</a></li>
+            <div class="dropdown-divider"></div>
+            {% comment %} <li id="logged-in"><a class="dropdown-item" id="logout" href="{% url 'account:logout' %}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> {% endcomment %}
+                        <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M3 12L15 12M3 12L7 8M3 12L7 16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> Logout</a></li>
+        </ul>
+    </div>
+</li>

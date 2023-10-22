@@ -1,0 +1,270 @@
+<section id="_appsLinkhub">
+  <div class="container pb-10">
+    <div class="row g-3">
+      <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Combine</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item py-2" href="{% url 'website:tools_single' 'combine-csv-files' %}">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Combine CSVs</span>
+              </a>
+            </li>
+            {% comment %} <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PDF Converter</span>
+              </a>
+            </li> {% endcomment %}
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Convert</h2>
+          <ul class="list-unstyled">
+            
+            <li>
+              <a class="dropdown-item py-2" href="{% url 'website:tools_single' 'json-to-csv-converter' %}">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">JSON to CSV</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Counters</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item py-2" href="{% url 'website:tools_single' 'count-characters' %}">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Character Counter</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="{% url 'website:tools_single' 'paragraph-counter' %}">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Paragraph Counter</span>
+              </a>
+            </li>
+            
+            <!-- <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Number Pages</span>
+              </a>
+            </li> -->
+            
+            <!-- <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Delete PDF Pages</span>
+              </a>
+            </li> -->
+
+            <!-- <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Rotate PDF</span>
+              </a>
+            </li> -->
+
+          </ul>
+        </div>
+      </div>
+      
+      <!-- COLUMN -->
+      <!-- <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Convert from PDF</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PDF to Word</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PDF to Excel</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PDF to PPT</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PDF to JPG</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      
+      <!-- COLUMN -->
+      <!-- <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Convert to PDF</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Word to PDF</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Excel to PDF</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">PPT to PDF</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">JPG to PDF</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- COLUMN -->
+      <!-- <div class="col-lg-2 col-sm-6 col-md-3 col-12">
+        <div class="col-megamenu">
+          <h2 class="dropdown-header">Sign & Security</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">eSign PDF</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Unlock PDF</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">
+                <span class="d-flex align-items-center">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24h2C1.79086 24 0 22.2091 0 20V4Z" fill="#F23030"></path>
+                    <path d="M5.68718 5.68718L11.8787 7.23507L12 7.26539L12.1213 7.23507L18.3128 5.68718L16.7649 11.8787L16.7346 12L16.7649 12.1213L18.3128 18.3128L12.1213 16.7649L12 16.7346L11.8787 16.7649L5.68718 18.3128L7.23507 12.1213L7.26539 12L7.23507 11.8787L5.68718 5.68718Z" stroke="white"></path>
+                  </svg>
+                </span>
+                <span class="ps-2">Protect PDF</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<!-- archive_singles.html -->
+
+{% load static %}
+{% for item in items %}
+  <div class="container col-6 my-10">
+    <a href="{% url 'website:single' slug=item.slug %}">
+      <h2 class="mt-10">{{ software.name|upper }}</h2>
+    </a>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a href="{% url 'website:single' slug=item.slug %}">
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+{% endfor %}

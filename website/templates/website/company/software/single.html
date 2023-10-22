@@ -1,0 +1,104 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+  {{ item.name }} Review | {{ website_name }}
+{% endblock %}
+
+{% block headstyles %}
+
+{% endblock %}
+
+{% block headscripts %}
+
+{% endblock %}
+
+{% block content %}
+  <section class="pt-4">
+    <div class="container pb-20">
+      <div class="row pt-5">
+        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+          <div class="card position-sticky top-0" id="companyAccordion">
+            <div>
+              <div class="p-1">
+                <a href="{{ item.serply_link }}" rel="noopener noreferrer nofollow sponsored" target="_blank">
+                  <div class="d-flex justify-content-center position-relative border-white border bg-cover">
+                    <img src="{{ item.homepage_screenshot }}" class="img-fluid" alt="{{ item.name }} featured image" />
+                  </div>
+                  <div class="card-body">
+                    <div class="d-grid">
+                      <button class="btn btn-outline-success mb-2">Visit {{ item.name }}</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <ul class="list-group list-group-flush">
+                <a class="h4 mb-0 d-flex align-items-center text-inherit text-decoration-none py-3 px-4" data-bs-toggle="collapse" href="#dropThree" role="button" aria-expanded="true" aria-controls="dropThree">
+                  <div class="me-auto">Categories</div>
+                  <span class="chevron-arrow ms-4"><i class="fe fe-chevron-down fs-4"></i></span>
+                </a>
+                <div class="collapse show" id="dropThree" data-bs-parent="#companyAccordion">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      {% for category in item.categories.all %}
+                        <a href="{% url 'website:company_collection' category.slug %}" class="btn btn-light btn-xs my-1">{{ category.name }}</a>
+                      {% endfor %}
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-12 col-md-12 col-12 mb-4 mb-xl-0">
+          <div id="_mainContentTopBox" class="card mb-5 mt-sm-5 mt-md-0">
+            <div id="_aboveTheTabs" class="card-body">
+              <a href="{{ item.serply_link }}" rel="nofollow noopener noreferrer sponsored" target="_blank">
+                <div class="row d-flex justify-content-between">
+                  <div class="col-12 col-sm-7">
+                    <h1 class="display-3 fw-bold mb-2">{{ item.name }}</h1>
+                      {% if item.one_liner %}
+                        <div class="my-2 text-decoration-none text-dark">{{ item.one_liner }}</div>
+                      {% else %}
+                        <div class="my-2 text-decoration-none text-dark"> </div>
+                      {% endif %}
+                      </div>
+                  <div class="col-12 col-sm-3">
+                    <button class="btn btn-outline-success mt-3 mt-sm-0">Visit Website</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <ul id="_theTabs" class="nav nav-lt-tab" id="tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="about-tab" data-bs-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="false"><h2 class="h5">About</h2></a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="_tabContentAreaDiv" class="card">
+            <div id="_tabContentAreas" class="card-body">
+              <div class="tab-content" id="tabContent">
+                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                  <div class="mb-4">
+                    <h2 class="mb-2">About {{ item.name }}</h2>
+                    {{ item.description|safe }}
+                    <div class="my-5">
+                      <h2>{{ item.name }} Alternatives</h2>
+                      {% for alternative in item.alternatives.all %}
+                        {% include 'website/company/software/partials/card_row.html' with company=alternative %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block bodyscripts %}
+
+{% endblock %}

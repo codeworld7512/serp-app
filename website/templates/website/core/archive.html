@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+  Home | {{ website_name }}
+{% endblock %}
+
+
+{% block content %}
+
+  <section id="_archivePage">
+    <section id="_hero">
+      <section class="bg-primary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+              <div class="py-4 py-lg-6">
+                <h1 class="mb-0 text-white display-4">Archive</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id=_software>
+    {% if softwares %}
+      <section id="_archiveSinglesSoftware">
+        {% include 'website/company/software/partials/archive_singles.html' %}
+      </section>
+      <section id="_archiveCardsSoftware">
+        {% include 'website/company/software/partials/archive_cards.html' %}
+      </section>
+    {% endif %}
+  </section>
+
+
+{% endblock %}
+

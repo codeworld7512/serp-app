@@ -1,0 +1,170 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+        {% block page_title %}
+        {% endblock page_title %}
+    </title>
+
+    {% if page.meta_description %}
+    <meta name="description" content="{{ page.meta_description }}" />
+    {% endif %}
+
+    {% if page.meta_keywords %}
+    <meta name="keywords" content="{{ page.meta_keywords }}" />
+    {% endif %}
+
+    {% if page.meta_author %}
+    <meta name="author" content="{{ page.meta_author }}" />
+    {% endif %}
+
+    {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}" />
+    {% endif %}
+
+    {% if page.meta_robots %}
+    <meta name="robots" content="{{page.meta_robots}}" />
+    {% endif %}
+
+    <!-- Google Tag Manager -->
+    {% if gtm_tag %}
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '{{ gtm_tag }}');</script>
+    {% endif %}
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Global CSS --><!-- Global CSS --><!-- Global CSS -->
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">  -->
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{% static 'website/fonts/feather/feather.css' %}" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="{% static 'website/libs/simplebar/dist/simplebar.min.css' %}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{% static 'website/libs/bootstrap-icons/font/bootstrap-icons.css' %}" media="print" onload="this.media='all'">
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'website/libs/magnific-popup/dist/magnific-popup.css' %}" media="print" onload="this.media='all' "> {% endcomment %}
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'website/libs/@mdi/font/css/materialdesignicons.min.css' %}" media="print" onload="this.media='all'" /> {% endcomment %}
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'website/libs/dropzone/dist/dropzone.css' %}" media="print" onload="this.media='all'"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'website/libs/tiny-slider/dist/tiny-slider.css' %}" media="print" onload="this.media='all'" />
+
+
+    <!-- Extra CSS -->
+
+    {% block extra_css %}
+    {% endblock extra_css %}
+
+    <!-- Theme + Custom CSS / load last -->
+    <link rel="stylesheet" href="{% static 'website/css/theme.min.css' %}" />
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'website/libs/@yaireo/tagify/dist/tagify.css' media=" print" onload="this.media='all'" %}"> {% endcomment %}
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'website/libs/dragula/dist/dragula.min.css' media=" print" onload="this.media='all'" %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon/favicon-serp_everything.ico' %}" />
+
+
+    <!-- Render blocking JS -->
+    <script>if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);</script>
+    <script src="{% static 'website/js/auth.js' %}"></script>
+
+    {% block head_scripts %}
+    {% endblock head_scripts %}
+</head>
+
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_tag }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+
+        <!-- NAVBAR -->
+        {% comment %} {% include 'website/partials/navbar.html' %} {% endcomment %}
+
+        <!-- SUB NAVBAR -->
+        {% comment %} {% block subnav %} {% endblock subnav %} {% endcomment %}
+
+        <!-- BREADCRUMBS -->
+        {% comment %} {% include 'website/partials/breadcrumbs.html' %} {% endcomment %}
+
+        <!-- MAIN CONTENT -->
+        {% block content %} {% endblock content %}
+
+    </main>
+
+    <!-- FOOTER -->
+    {% comment %} {% include 'website/partials/footer.html' %} {% endcomment %}
+
+
+    <!-- SCRIPTS --><!-- SCRIPTS --><!-- SCRIPTS -->
+
+    <!-- Libs & Vendor JS -->
+    <script src="{% static 'website/libs/jquery/dist/jquery.min.js' %}"></script> <!-- often a dependency for other scripts -->
+    <script src="{% static 'website/libs/@popperjs/website/dist/umd/popper.min.js' %}"></script> <!-- often a dependency for bootstrap -->
+    <script src="{% static 'website/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script> <!-- dependency: jQuery, Popper.js -->
+    <script src="{% static 'website/libs/bootstrap-select/dist/js/bootstrap-select.min.js' %}"></script> <!-- dependency: jQuery, Bootstrap -->
+    <script src="{% static 'website/libs/bs-stepper/dist/js/bs-stepper.min.js' %}" defer></script>
+    <script src="{% static 'website/libs/simplebar/dist/simplebar.min.js' %}" defer></script>
+    {% comment %}
+    <script src="{% static 'website/libs/wnumb/wNumb.min.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/nouislider/dist/nouislider.min.js' %}" defer></script> <!-- dependency: wNumb --> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/@yaireo/tagify/dist/tagify.min.js' %}" defer></script> {% endcomment %}
+    <script src="{% static 'website/libs/tippy.js/dist/tippy-bundle.umd.min.js' %}" defer></script>
+    <script src="{% static 'website/libs/magnific-popup/dist/jquery.magnific-popup.min.js' %}" defer></script> <!-- dependency: jQuery -->
+    <script src="{% static 'website/libs/tiny-slider/dist/min/tiny-slider.js' %}" defer></script>
+    <script src="{% static 'website/js/vendors/tnsSlider.js' %}" defer></script>
+    <script src="{% static 'website/js/vendors/beStepper.js' %}" defer></script>
+    {% comment %}
+    <script src="{% static 'website/js/vendors/popup.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/js/vendors/tooltip.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/dragula/dist/dragula.min.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/js/vendors/customDragula.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/quill/dist/quill.min.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/js/vendors/editor.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js' %}" defer></script> {% endcomment %}
+    {% comment %}
+    <script src="{% static 'website/libs/dropzone/dist/dropzone.js' %}" defer></script> {% endcomment %}
+
+    <!-- Theme JS -->
+    <script src="{% static 'website/js/theme.min.js' %}"></script>
+
+
+    <!-- Page JS -->
+    {% autoescape off %}
+    {% block body_scripts %}
+    {% endblock body_scripts %}
+    {% endautoescape %}
+
+</body>
+
+</html>

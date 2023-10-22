@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Fonts -->
+		<link href="../assets/fonts/feather/feather.css" rel="stylesheet">
+		<link href="../assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+		<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/theme.min.css">
+		<title>Company Single</title>
+	</head>
+  	<body class="bg-white">
+
+		<!-- NAVBAR -->
+		<section id="_navbar">
+			<header class="">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container d-flex justify-content-between align-items-center">
+						<a class="navbar-brand" href="../index.html">
+							<svg width="25pt" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g id="#000000ff">
+								<path fill="#000000" opacity="1.00"
+									d=" M 127.63 540.65 C 255.63 429.93 383.74 319.34 511.76 208.64 C 639.72 319.28 767.74 429.84 895.70 540.47 C 895.65 631.73 895.76 722.99 895.65 814.25 C 719.72 662.15 543.74 510.10 367.76 358.07 C 398.91 414.74 429.78 471.56 460.93 528.23 C 349.87 623.82 238.65 719.24 127.67 814.93 C 127.62 723.50 127.71 632.08 127.63 540.65 Z" />
+								</g>
+							</svg>
+						</a>
+						<div class="order-lg-3 d-flex align-items-center">
+							<form class="mt-0 ms-3 me-3 align-items-center d-none d-md-flex">
+								<span class="position-absolute ps-3 search-icon">
+								  <i class="fe fe-search"></i>
+								</span>
+								<input type="search" class="form-control ps-6" placeholder="Search Courses" >
+							</form>
+
+							<div class="">
+								<div class="d-flex align-items-center">
+								<a href="#" class="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-2">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+									<label class="form-check-label" for="flexSwitchCheckDefault"></label>
+						
+									</a>
+								</div>
+							</div>
+							<ul class="navbar-nav navbar-right-wrap mx-2 flex-row">
+								<li class="dropdown ms-2 d-inline-block position-relative">
+									<a class="rounded-circle" href="#" data-bs-toggle="dropdown" data-bs-display="static"
+										aria-expanded="false">
+										<div class="avatar avatar-md avatar-indicators avatar-online">
+											<img alt="avatar" src="../assets/images/avatar/avatar-1.jpg"
+												class="rounded-circle" >
+										</div>
+									</a>
+									<div class="dropdown-menu dropdown-menu-end position-absolute mx-3 my-4">
+										<div class="dropdown-item">
+											<div class="d-flex">
+												<div class="avatar avatar-md avatar-indicators avatar-online">
+													<img alt="avatar" src="../assets/images/avatar/avatar-1.jpg"
+														class="rounded-circle" >
+												</div>
+												<div class="ms-3 lh-1">
+													<h5 class="mb-1">Annette Black</h5>
+													<p class="mb-0 text-muted">annette@geeksui.com</p>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-divider"></div>
+										<ul class="list-unstyled">
+											<li class="dropdown-submenu dropstart-lg">
+												<a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+													<i class="fe fe-circle me-2"></i>Status
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="#">
+															<span class="badge-dot bg-success me-2"></span>Online
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="#">
+															<span class="badge-dot bg-secondary me-2"></span>Offline
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="#">
+															<span class="badge-dot bg-warning me-2"></span>Away
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="#">
+															<span class="badge-dot bg-danger me-2"></span>Busy
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="../pages/profile-edit.html">
+													<i class="fe fe-user me-2"></i>Profile
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="../pages/student-subscriptions.html">
+													<i class="fe fe-star me-2"></i>Subscription
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">
+													<i class="fe fe-settings me-2"></i>Settings
+												</a>
+											</li>
+										</ul>
+										<div class="dropdown-divider"></div>
+										<ul class="list-unstyled">
+											<li>
+												<a class="dropdown-item" href="../index.html">
+													<i class="fe fe-power me-2"></i>Sign Out
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<!-- Button -->
+							<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default"
+							aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar top-bar mt-0"></span>
+							<span class="icon-bar middle-bar"></span>
+							<span class="icon-bar bottom-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collapse -->
+						<div class="collapse navbar-collapse" id="navbar-default">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarLanding" data-bs-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Menu
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarLanding">
+										<li><a href="boxers/boxers.html" class="dropdown-item">Boxers Index</a></li>
+										<li><a class="dropdown-item" href="boxers/boxers-single.html">Boxers Single</a></li>
+										<li>
+										<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="/fights">Fights Index</a></li>
+										<li><a class="dropdown-item" href="/fights/test">Fights Single</a></li>
+										<li>
+										<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="/blog">Blog Index</a></li>
+										<li><a class="dropdown-item" href="/blog/collection/test">Blog Post</a></li>
+										<li><a class="dropdown-item" href="/blog/single/test">Blog Post</a></li>
+										<li>
+										<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="/shop">Shop Index</a></li>
+										<li><a class="dropdown-item" href="/shop/collection/test">Shop Collection</a></li>
+										<li><a class="dropdown-item" href="/shop/single/test">Shop Single</a></li>
+										<li><a class="dropdown-item" href="/shop/roundup/test">Shop Roundup</a></li>
+										<li><a class="dropdown-item" href="/shop/roundup-review/test">Shop Roundup Review</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarBrowse" data-bs-toggle="dropdown" aria-haspopup="true"
+									  aria-expanded="false" data-display="static">
+									  Pages
+									</a>
+									<ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarBrowse">
+									  <li class="dropdown-submenu dropend">
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                        Boxers
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                        <a class="dropdown-item" href="../boxers/boxers_index.html">
+                          Boxers Index</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="../boxers/boxers_single.html">
+                          Boxers Single
+                        </a>
+                        </li>
+                      </ul>
+									  </li>
+									  <li class="dropdown-submenu dropend">
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                        Company
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                        <a class="dropdown-item" href="company_collection.html">
+                          Company Collection</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="company_single.html">
+                          Company Single
+                        </a>
+                        </li>
+                      </ul>
+									  </li>
+									  <li class="dropdown-submenu dropend">
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                        Music
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                        <a class="dropdown-item" href="../music/artists_collection.html">
+                          Artist Collection</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="../music/albums_collection.html">
+                          Albums Collection</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="../music/songs_collection.html">
+                          Songs Collection</a>
+                        </li>
+                      </ul>
+									  </li>
+									</ul>
+								</li>
+							</ul>
+
+							<form class="mt-3 align-items-center d-md-none d-flex">
+								<span class="position-absolute ps-3 search-icon">
+								  <i class="fe fe-search"></i>
+								</span>
+								<input type="search" class="form-control ps-6" placeholder="Search Courses" >
+							</form>
+						</div>		
+					</div>		
+				</nav>
+			</header>
+		</section>
+		<!-- END NAVBAR -->
+
+		<main>
+			<!-- PAGE HEADER -->
+			<section id="_pageHeader" class="bg-primary py-4 py-lg-6">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+							<div>
+								<h1 class="text-white mb-1 display-4">Bonita Payments Review</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END PAGE HEADER -->
+			
+			<!-- BEADCRUMBS  -->
+			<section class="pt-3">
+				<div class="container">
+				  <div class="row">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+							<li class="breadcrumb-item"><a href="#">Reviews</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Bonita Payments</li>
+						  </ol>
+						</nav>
+				  </div>
+				</div>
+			</section>
+			<!-- END BEADCRUMBS  -->
+
+      <!-- Content -->
+			<!-- Company Single -->
+			<section class="py-6">
+				<div class="container">
+				  <div class=" row">
+            <div class="col-lg-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row d-flex flex-column-reverse flex-lg-row">
+                    <div class="col-lg-8">
+                      <div>
+                        <div>
+                          <p class="mb-0">RATES AND FEES <span class="ps-2">90 /100</span> </p>
+                          <div class="progress" style="height: 22px;">                          
+                            <div class="progress-bar" role="progressbar" aria-label="Rates and Fees" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          </div>
+                        </div>
+
+                        <div class="mt-2">
+                          <p class="mb-0">TRUTH IN ADVERTISING <span class="ps-2">90 /100</span> </p>
+                          <div class="progress" style="height: 22px;">                          
+                            <div class="progress-bar" role="progressbar" aria-label="Truth in advertising" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          </div>
+                        </div>
+
+                        <div class="mt-2">
+                          <p class="mb-0">CONSUMER REVIEWS <span class="ps-2">90 /100</span> </p>
+                          <div class="progress" style="height: 22px;">                          
+                            <div class="progress-bar" role="progressbar" aria-label="Customer reviews" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          </div>
+                        </div>
+
+                        <div class="mt-2">
+                          <p class="mb-0">CONSUMER REVIEWS <span class="ps-2">80 /100</span> </p>
+                          <div class="progress" style="height: 22px;">                          
+                            <div class="progress-bar" role="progressbar" aria-label="Consumer reviews" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
+                      <div>
+                        <img class="img-thumbnail" src="https://picsum.photos/seed/1/150" alt="">
+                        <div class="d-flex flex-column align-items-center">
+                          <span class="fs-1">4.5</span>
+                          <span class="text-dark fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                              height="16" fill="currentColor" class="bi bi-star-fill text-warning align-baseline"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                              height="16" fill="currentColor" class="bi bi-star-fill text-warning align-baseline"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                              height="16" fill="currentColor" class="bi bi-star-fill text-warning align-baseline"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                              height="16" fill="currentColor" class="bi bi-star-fill text-warning align-baseline"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                              height="16" fill="currentColor" class="bi bi-star-fill text-warning align-baseline"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="d-flex">
+                      <div class="pe-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3"></path>
+                       </svg>
+                      </div>
+                      <div>
+                        <h4 class="text-uppercase">Best For</h4>
+                         <p>
+                           Small, medium, or large-sized businesses looking for an all-in-one, affordable payment processor.
+                         </p>
+                      </div>
+                      
+                    </div>
+
+                    <div class="d-flex pt-2">
+                      <div class="pe-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                          <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                       </svg>
+                      </div>
+                      <div>
+                        <h4 class="text-uppercase">SPECIALIZES IN</h4>
+                         <p>
+                            Bonita Payments serves all business types and sizes but seems to specialize in small businesses, especially retail, restaurant, petroleum, online and mobile.
+                         </p>
+                      </div>
+                      
+                    </div>
+
+                    <div class="d-flex pt-2">
+                      <div class="pe-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                          <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1"></path>
+                          <path d="M12 7v10"></path>
+                       </svg>
+                      </div>
+                      <div class="w-100 pe-5">
+                        <h4 class="text-uppercase">PRICING SUMMARY</h4>
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                          <div>
+                            <p class="mb-1"><span class="fw-semibold">Setup Fee: </span> Undisclosed </p>
+                            <p class="mb-1"><span class="fw-semibold">Swipe Rate: </span> 1.00% - 4.99% </p>
+                            <p class="mb-1"><span class="fw-semibold">Early Termination Fee: </span> Variable </p>
+                          </div>
+
+                          <div>
+                            <p class="mb-1"><span class="fw-semibold">Monthly Fee: </span> Undisclosed </p>
+                            <p class="mb-1"><span class="fw-semibold">Keyed-in Rat: </span> 1.00% - 4.99% </p>
+                            <p class="mb-1"><span class="fw-semibold">Contract Terms: </span> Variable </p>
+                          </div>
+                          
+                        </div>
+                         
+                      </div>
+                      
+                    </div>
+
+                    <div class="mt-5">
+                      <button class="btn btn-primary">Visit Bonita Payments</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5">
+                <p>Bonita Payments is a merchant account provider and a reseller of Clover POS products. It is an all-in-one payment provider which can process payments, provide physical equipment, and all the tools a business needs to do business online.</p>
+
+                <p>
+                  The company was founded in 2016 and is currently headquartered in New Orleans, Louisiana. Elliot Forman is listed as the president of the company.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Overview</h4>
+                <p>
+                  Bonita payments came into existence in 2016. The company prides itself on its reliability, transparency, and affordability.
+                </p>
+                <p>
+                  Bonita Payments is a full-fledged merchant account provider that can process all cashless payments. They also offer physical equipment in the form of Clover products.
+                </p>
+                <p>
+                  Bonita Payments claims to offer customized solutions for a wide range of business types. However, they seem to be most passionate about serving small businesses. They specifically cite their expertise in businesses in the following industries: retail, restaurant, gas, mobile and online.
+                </p>
+                <p>
+                  Their prices and contract terms will vary depending on the needs of the business. Overall, their pricing is very good and although little is known about their contract terms, there are no customer complaints about the contract.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 mb-4">Quick Facts</h4>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Head Quarters</td>
+                        <td class="text-end">New Orleans, Louisiana</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Year Founded</td>
+                        <td class="text-end">2015</td>                        
+                      </tr>
+                      <tr>
+                        <td>CEO</td>
+                        <td class="text-end">Elliott Forman - President</td>                        
+                      </tr>
+                      <tr>
+                        <td>Employees</td>
+                        <td class="text-end">10</td>                        
+                      </tr>
+                      <tr>
+                        <td>Merchant Provider Risk Tolerance</td>
+                        <td class="text-end"></td>                        
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5  pb-5 mb-5 d-flex flex-column flex-lg-row justify-content-lg-between">
+                <h4 class="display-5 pb-3">What We Like</h4>
+                <h4 class="display-5 pb-3">What We Don't Like</h4>
+              </div>
+              
+              <div class="fs-4 mt-5">
+                <h4 class="display-5 pb-2">Industries Served</h4>
+                <ul>
+                  <li>Automotive</li>
+                  <li>Beauty & Wellness</li>
+                  <li>Clothing & Apparel</li>
+                  <li>Convenience Store</li>
+                  <li>Contractors</li>
+                  <li>Electronics</li>
+                  <li>Food & Beverage</li>
+                  <li>Gas Station</li>
+                  <li>Healthcare</li>
+                  <li>Hunting & Outdoor Equipment</li>
+                  <li>Medical</li>
+                  <li>Moving Companies</li>
+                  <li>Personal Service</li>
+                  <li>Professional Services</li>
+                  <li>Online Sellers</li>
+                </ul>
+              </div>
+              
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 pb-2">Business Types Served</h4>
+                <ul>
+                  <li>B2B</li>
+                  <li>Ecommerce</li>
+                  <li>Enterprise Merchant Accounts</li>
+                  <li>Mobile</li>
+                  <li>Mom & Pop</li>
+                  <li>MOTO</li>
+                  <li>Online</li>
+                  <li>Retail / Card Present</li>
+                  <li>Small Business</li>
+                  <li>Wholesale</li>
+                </ul>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Products & Services</h4>
+                <p>
+                  Hardware and Software
+                </p>
+                <p>
+                  Bonita Payments is a reseller of Clover POS products. This includes full POS systems, mini POS systems, credit card readers, and handheld POS systems.
+                </p>
+                <p>
+                  Some of the features that come with the POS systems include a weekly email of data insights, detailed reporting, as well as enhanced speed and security.
+                </p>
+                <p>
+                  Customers will also have access to the Clover Dashboard and the fully customizable Clover Go App.
+                </p>
+                </p>
+                <p>
+                  Some other features include inventory management, enhanced fraud protection, and rapid deposit.
+                </p>
+                </p>
+                <p>
+                  Some of the features they offer include:
+                </p>
+                </p>
+                <p>
+                  Authorize.Net which provides a secure infrastructure for fast payments.
+                </p>
+                </p>
+                <p>
+                  PayeezySM eCommerce allows multiple payment options and enhanced security.
+                </p>
+                </p>
+                <p>
+                  eProcessing Network, which offers secure, real-time processing of cards, checks, and gift cards whether in-person, online or via a mobile app.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 pb-2">Bonita Payments Payment Processing</h4>
+                <ul>
+                  <li>ACH Check Transactions</li>
+                  <li>Cash Transactions</li>
+                  <li>Chargeback & Fraud Prevention</li>
+                  <li>Check Guarantee</li>
+                  <li>Contactless NFC</li>
+                  <li>Credit Card Processing</li>
+                  <li>Credit Card Terminals</li>
+                  <li>Debit Card Processing</li>
+                  <li>EMV Processing</li>
+                  <li>Gift & Loyalty Program</li>
+                  <li>Mobile Card Reader</li>
+                  <li>Mobile Payments App</li>
+                  <li>Online Payments</li>
+                </ul>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 pb-2">Bonita Payments Billing & Invoicing</h4>
+                <ul>
+                  <li>Contact Database</li>
+                  <li>Customizable Invoices</li>
+                  <li>Dunning Management</li>
+                  <li>Mobile Payments</li>
+                  <li>Online Invoicing</li>
+                  <li>Online Payments</li>
+                  <li>Payment Processing</li>
+                  <li>Recurring/Subscription Billing</li>
+                </ul>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Advertising & Sales</h4>
+                <p>
+                  Bonita Payments uses an in-house sales team to market and sell its products. This tactic is uncommon in the industry but is preferred as it is less likely to generate complaints of spam, aggressive sales tactics, or misleading contracts.
+                </p>
+                <p>
+                  In the case of Bonita Payments, there are no complaints about their sales practices and no misleading information on their website or other marketing materials.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 mb-4">Truth in Marketing</h4>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Discloses All Important Terms</td>
+                        <td class="text-end">No</td>                        
+                      </tr>
+                      <tr>
+                        <td>Public Pricing Available</td>
+                        <td class="text-end">No</td>                        
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Pricing, Rates & Fees</h4>
+                <p>
+                  Swiped and keyed-in rates will vary from 1.00 - 4.99%.
+                </p>
+                <p>
+                  In the case of Bonita Payments, there are no complaints about their sales practices and no misleading information on their website or other marketing materials.
+                </p>
+                </p>
+                <p>
+                  There is no other information on rates and fees other than to say the terms will vary from business to business
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 mb-4">Pricing at a Glance</h4>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Pricing Model</td>
+                        <td class="text-end">Interchange Plus</td>                        
+                      </tr>
+                      <tr>
+                        <td>Swiped Rate</td>
+                        <td class="text-end">1.00% - 4.99%</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Keyed-in Rate Rate</td>
+                        <td class="text-end">1.00% - 4.99%</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Mobile Payment Rate</td>
+                        <td class="text-end"></td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Virtual Terminal Rate</td>
+                        <td class="text-end">1.00% - 4.99%</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Monthly Fee</td>
+                        <td class="text-end">Undisclosed</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Payment Gateway Fee</td>
+                        <td class="text-end">Undisclosed</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Batch Fee</td>
+                        <td class="text-end">Undisclosed</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>Early Termination Fee</td>
+                        <td class="text-end">Variable</td>                        
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>PCI Compliance Fee</td>
+                        <td class="text-end">Variable</td>                        
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Contract & Terms</h4>
+                <p>
+                  We don’t know much about a standard Bonita Payments contract, except that it varies from customer to customer.
+                </p>
+                <p>
+                  High risk merchants will typically have to pay higher rates and abide by stricter contract terms.
+                </p>
+                </p>
+                <p>
+                  There are no public complaints about Bonita Payments contracts which indicate that their customers seem to be satisfied with the terms and conditions.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-2 pt-5">
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Contract Length</td>
+                        <td class="text-end">Variable</td>                        
+                      </tr>
+                      <tr>
+                        <td>Early Termination Fee</td>
+                        <td class="text-end">Variable</td>                        
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Setup & Support</h4>
+                <p>
+                  Bonita Payments offers a customer support email and contact form on their website. They also have a general phone number and email anyone can reach out.
+                </p>
+                <p>
+                  They claim their application can be completed in as little as two minutes.
+                </p>
+                </p>
+                <p>
+                  All approved clients get assigned a dedicated support person to help them with setup, as well as assist them with any issues along the way.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5  pb-5 mb-5 d-flex flex-column flex-lg-row justify-content-lg-between">
+                <div>
+                  <h4 class="display-6 pb-3">Setup Highlights</h4>
+                  <ul>
+                    <li>Documentation / Knowledge Base</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="display-6 pb-3">Support Highlights</h4>
+                  <ul>
+                    <li>Domestic Phone Support (Business Hours)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Complaints, Ratings & Reviews</h4>
+                <p>
+                  BBB Rating
+                </p>
+                <p>
+                  There is no Better Business Bureau profile for Bonita Payments.
+                </p>
+                </p>
+                <p>
+                  Other Online Reviews
+                </p>
+                <p>
+                  There are no public, online complaints about Bonita Payments to be found.
+                </p>
+                <p>
+                  The lack of any customer complaints online is a good indicator that Bonita Payments is providing a good service to its customers.
+                </p>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5  pb-5 mb-5 d-flex flex-column flex-lg-row justify-content-lg-between">
+                <div>
+                  <h4 class="display-6 pb-3">Ratings</h4>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>BBB</td>
+                          <td class="text-end">Does not have BBB profile.</td>                        
+                        </tr>
+                        <tr>
+                          <td>Google</td>
+                          <td class="text-end">5 Stars / 5 Reviews</td>                        
+                        </tr>
+                        <tr>
+                          <td>Facebook Rate</td>
+                          <td class="text-end">No Recommendations Yet</td>                        
+                        </tr>
+                        <tr>
+                          <td>Yelp</td>
+                          <td class="text-end">N/A</td>                        
+                        </tr>
+  
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="display-6 pb-3">Reviews</h4>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>Total Online Reviews</td>
+                          <td class="text-end">10+</td>                        
+                        </tr>
+                        <tr>
+                          <td>Total Online Complaints</td>
+                          <td class="text-end"></td>                        
+                        </tr>
+                        <tr>
+                          <td>Lawsuits</td>
+                          <td class="text-end">None</td>                        
+                        </tr>
+  
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fs-4 mt-5 pt-5">
+                <h4 class="display-5 border-bottom border-1 border-dark pb-2 mb-4">Bonita Payments Alternatives</h4>
+                <img src="https://picsum.photos/seed/9/250/100" alt="">
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="card mt-5 mt-lg-0 sticky-lg-top">
+                <div class="card-header">
+                  <h6 class="fs-4 text-center">NEED A MERCHANT ACCOUNT PROVIDER?</h6> 
+                </div>
+                <div class="card-body">
+                  <div class="text-center fs-4">
+                    <p>If you're in the market for a merchant account provider, be sure to check out our user reviews, our merchant accounts guide and our top popular merchant provider picks</p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary btn-md">See our picks for best processors</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+		</main>
+
+		<!-- FOOTER -->
+		<footer class="pt-lg-10 pt-5 footer bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Heading -->
+						<h1 class="display-6 fw-bold lh-1 mb-3">Subscribe to our newsletter</h1>
+						<!-- Para -->
+						<p class="mb-5">Monthly digest of what's new and exciting from us.
+						</p>
+						<!-- Row -->
+						<form class="d-inline-flex justify-content-center justify-content-lg-start">
+							<label class="visually-hidden" for="subscribeInput">Email</label>
+							<input type="email" class="form-control mb-2 me-2" id="subscribeInput" placeholder="Your e-mail...">
+							<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+						</form>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+						<div class="mb-4">
+							<!-- list -->
+							<h3 class="fw-bold mb-3">Company</h3>
+							<ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+								<li><a href="#" class="nav-link">About</a></li>
+								<li><a href="#" class="nav-link">Pricing</a></li>
+								<li><a href="#" class="nav-link">Blog</a></li>
+								<li><a href="#" class="nav-link">Careers</a></li>
+								<li><a href="#" class="nav-link">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="mb-4">
+							<!-- list -->
+							<h3 class="fw-bold mb-3">Support</h3>
+							<ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+								<li><a href="#" class="nav-link">Help and Support</a></li>
+								<li><a href="#" class="nav-link">Become Instructor</a></li>
+								<li><a href="#" class="nav-link">Get the app</a></li>
+								<li><a href="#" class="nav-link">FAQ’s</a></li>
+								<li><a href="#" class="nav-link">Tutorial</a></li>
+							</ul>
+			
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<!-- contact info -->
+						<div class="mb-4">
+							<h3 class="fw-bold mb-3">Get in touch</h3>
+							<p>339 McDermott Points Hettingerhaven, NV 15283</p>
+							<p class="mb-1">Email: <a href="#">support@geeksui.com</a></p>
+							<p>Phone: <span class="text-dark fw-semibold">(000) 123 456 789</span></p>
+			
+						</div>
+						<div class="fs-4 mt-4">
+							<a href="#" class="mdi mdi-facebook fs-4 text-muted me-2"></a>
+							<a href="#" class="mdi mdi-twitter text-muted me-2"></a>
+							<a href="#" class="mdi mdi-instagram text-muted "></a>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center g-0 border-top py-2 mt-6">
+					<!-- Desc -->
+					<div class="col-lg-4 col-md-5 col-12">
+						<span>© <span id="copyright2">
+						<script>document.getElementById('copyright2').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					</span> © 2023 Company, Inc. All rights reserved.</span>
+						</div>
+		
+					<!-- Links -->
+					<div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
+						<nav class="nav nav-footer">
+							<a class="nav-link ps-0" href="#">Privacy Policy</a>
+							<a class="nav-link px-2 px-md-3" href="#">Cookie Notice  </a>
+		
+							<a class="nav-link" href="#">Terms of Use</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+    
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+		<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/js/theme.min.js"></script>
+  	</body>
+</html>

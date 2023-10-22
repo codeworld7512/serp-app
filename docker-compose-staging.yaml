@@ -1,0 +1,35 @@
+networks:
+  web_network:
+    external: true
+services:
+  serp-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: serp-app
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    env_file:
+      - .env
+    environment:
+      - SENTRY_DSN=${SENTRY_DSN}
+      - SECRET_KEY=${SECRET_KEY}
+      - DJANGO_SETTINGS_MODULE=PROJECT_.settings.production
+    ports:
+      - 5585:5585
+    networks:
+      - web_network
+    restart: always
+    depends_on:
+      - redis-serp-app
+
+  redis-serp-app:
+    container_name: redis-serp-app
+    restart: always
+    image: redis:6.2-alpine
+    networks:
+      - web_network
+
+version: '3.8'

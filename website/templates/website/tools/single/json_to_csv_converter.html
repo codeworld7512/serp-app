@@ -1,0 +1,54 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'website/css/loading-bar.min.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+<section id="_toolSingle">
+
+    <section id="Hero" class="py-lg-10 bg-gray-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-12 text-center">
+                    <h1 class="mb-2 display-4 fw-bold">JSON to CSV</h1>
+                    <h2 class="lead">Convert JSON to a CSV file or comma separated list.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="_conversionSection">
+        <div class="container">
+            <div class="row">
+                <!-- JSON Input Column -->
+                <div class="col-md-6 mb-4 d-block min-h-0">
+                    <textarea id="jsonInput" class="form-control" placeholder="Paste your JSON here" rows="15"></textarea>
+                </div>
+                
+                <!-- CSV Output Column -->
+                <div class="col-md-6 mb-4 d-block min-h-0">
+                    <textarea id="csvOutput" class="form-control" placeholder="CSV will appear here" rows="15"></textarea>
+                </div>
+            </div>
+
+            <!-- Convert and Download Buttons Row -->
+        <div class="row">
+          <div class="col-12 my-5 d-flex justify-content-center align-items-center">
+              <button class="btn btn-primary mx-2" onclick="convertJSONtoCSV()">Convert to CSV</button>
+              <button class="btn btn-secondary mx-2" onclick="downloadCSV()">Download CSV</button>
+          </div>
+          <div class="col-12 text-center">
+            <div class="ldBar label-center" data-preset="line" data-type="stroke" data-path="M10 10L90 10"></div>
+          </div>
+      </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block body_scripts %}
+<script src="{% static 'website/js/tools/papaparse.min.js' %}" defer></script>
+<script src="{% static 'website/js/loading-bar.min.js' %}" defer></script>
+<script src="{% static 'website/js/tools/jsontocsv.js' %}" defer></script>
+{% endblock body_scripts %}

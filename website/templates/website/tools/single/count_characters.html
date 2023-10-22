@@ -1,0 +1,43 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'website/css/loading-bar.min.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+<section id="_toolSingle">
+
+    <section id="Hero" class="py-lg-5 bg-gray-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-12 text-center">
+                    <h1 class="mb-2 display-4 fw-bold">Character Counter</h1>
+                    <h2 class="lead">A free online character counter.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="_mainSection">
+        <div class="container">
+            <div class="row">
+                <!-- Input Section A -->
+                <div class="mb-4 d-block min-h-0">
+                    <textarea id="input-area-A" class="form-control" placeholder="Paste your content here" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5 d-flex justify-content-center align-items-center">
+                    <h3 id="result"></h3>
+                    <button id="submit-button" class="btn btn-primary mx-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+    {% block body_scripts %}
+    <script src="{% static 'website/js/loading-bar.min.js' %}" defer></script>
+    <script src="{% static 'website/js/tools/countCharacters.js' %}" defer></script>
+    {% endblock body_scripts %}

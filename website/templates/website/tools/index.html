@@ -1,0 +1,20 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+Tools | {{ website_name }}
+{% endblock %}
+
+
+{% block content %}
+<section id="_">
+  <div class="col text-center py-10">
+    <h1 class="mb-2 display-4 fw-bold">Tools</h1>
+    <p class="lead">Free online tools and apps for combining, converting, compressing & convenience.</p>
+  </div>
+  {% include 'website/tools/partials/linkhub.html' %}
+</section>
+{% endblock %}
+
+{% block bodyscripts %}
+
+{% endblock %}

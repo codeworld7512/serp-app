@@ -1,0 +1,40 @@
+{% load static %}
+
+{% comment %} 
+<li class="nav-item dropdown">
+    <span class="nav-link dropdown-toggle" id="navbarSingle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">Blog</span>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'website:blog_index' %}">Blog</a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="#">Blog</a></li>
+    </ul>
+</li> {% endcomment %}
+
+
+<li class="nav-item dropdown">
+    <span class="nav-link dropdown-toggle" id="navbarSingle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">AI Tools</span>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/directory/">Directory</a></li>
+        <li><a class="dropdown-item" href="{% url 'website:company_collection' 'artificial-intelligence-tools' %}">Artificial Intelligence Tools</a></li>
+        <hr class="dropdown-divider">
+    </ul>
+</li>
+
+
+<li class="nav-item dropdown">
+    <span class="nav-link dropdown-toggle" id="navbarSingle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">Tools</span>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/tools/">Tools</a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="/tool/combine-csv-files/">Combine CSVs</a></li>
+        <li><a class="dropdown-item" href="/tool/json-to-csv-converter/">JSON to CSV</a></li>
+        <li><a class="dropdown-item" href="/tool/csv-to-json-converter/">CSV to JSON</a></li>
+        <li><a class="dropdown-item" href="/tool/count-characters/">Character Counter</a></li>
+        <li><a class="dropdown-item" href="/tool/word-counter/">Word Counter</a></li>
+        <li><a class="dropdown-item" href="/tool/sentence-counter/">Sentence Counter</a></li>
+        <li><a class="dropdown-item" href="/tool/paragraph-counter/">Paragraph Counter</a></li>
+        <li><a class="dropdown-item" href="/tool/token-counter/">Token Counter</a></li>
+    </ul>
+</li>
+
+

@@ -1,0 +1,47 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block extra_css %}
+{% endblock extra_css %}
+
+
+{% block content %}
+
+<section id="_combineCSV" >
+    
+    <section id="Hero" class="py-7 py-lg-110 bg-gray-100">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-8 col-md-12 col-12 text-center my-5">
+                    <h1 class="mb-2 display-4 fw-bold">Combine CSVs</h1>
+                    <h2 class="lead">Merge multiple spreadsheet or excel files like .csv, .xls and .xlxs. </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="_dropZoneSection">
+        <div id="_dropZoneArea" class="container">
+            <div class="row">
+                <div class="col-12 mb-4 d-block dropzone border-dashed min-h-0 rounded-2 py-15">
+                    <form class="" method="post" enctype="multipart/form-data" id="csv-combiner-form">
+                        {% csrf_token %}
+                        <input name="files" type="file" multiple id="inputFiles" />
+                    </form>
+                </div>
+                <div class="my-5 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary my-5" onclick="combineFiles()">Combine</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}
+
+
+{% block body_scripts %}
+<script src="{% static 'website/js/tools/papaparse.min.js' %}" defer></script>
+<script src="{% static 'website/js/tools/xlsx.full.min.js' %}" defer></script>
+<script src="{% static 'website/js/tools/combinecsv.js' %}" defer></script>
+{% comment %} script src="{% static 'website/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js' %}" defer></script> {% endcomment %}
+{% comment %} <script src="{% static 'website/libs/dropzone/dist/dropzone.js' %}" defer></script> {% endcomment %}
+{% endblock body_scripts %}

@@ -1,0 +1,43 @@
+{% extends 'website/base.html' %} {% load static %}
+
+{% block page_title %}
+  DMCA & IP Complaints | {{ website_name }}
+{% endblock %}
+
+{% block headstyles %}
+
+{% endblock %}
+
+{% block headscripts %}
+
+{% endblock %}
+
+{% block content %}
+  <section id="_dmca">
+    <section class="py-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="text-center">
+              <h1 class="display-3 fw-bold">DMCA & IP Complaints</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-7">
+            <p>We take intellectual property very seriously. If you would like to file a complaint regarding the DMCA or other intellectual property matters, please email: dmca [@] {{ website_url }} and/or ipcomplaints [@] {{ website_url }}
+              Please make sure you remove the brackets [ ] and spaces in the above provided emails. We format it like this to reduce spam from bots, spiders, and scrapers. Thank you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+{% endblock %}
+
+{% block bodyscripts %}
+
+{% endblock %}

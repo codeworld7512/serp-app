@@ -1,0 +1,40 @@
+<!-- website/company/software/partials/card_row.html -->
+
+<div class="card card-bordered mb-3 card-hover cursor-pointer">
+  <div class="card-body">
+    <div class="d-xl-flex">
+      <div class="col-3 d-flex flex-column justify-content-between">
+        <img src="{{ item.homepage_screenshot }}" alt="{{ item.name }} featured thumbnail image" class="img-fluid" />
+        <div>
+          <a href="{% url 'website:company_single' item.slug %}" class="btn btn-outline-info w-100 mt-2 fs-6 ">{{ item.name }} Review</a>
+        </div>
+      </div>
+      <div class="ms-xl-3 w-100 mt-3 mt-xl-0 d-flex flex-column justify-content-between">
+        <div>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="mb-1"><a href="{{ item.serply_link }}" rel="noopener noreferrer nofollow sponsored" target="_blank" class="text-inherit">{{ item.name }}</a></h2>
+            <div id="_icon">
+              <i class="bi bi-heart text-muted bookmark ms-3"></i>
+              <i class="bi bi-bookmark text-muted bookmark ms-3"></i>
+              <i class="bi bi-share text-muted bookmark ms-3"></i>
+
+            </div>
+          </div>
+          <p class="mt-2">
+            {% if item.one_liner %}
+              {{ item.one_liner|safe }}
+            {% else %}
+              {{ item.short_description|truncatewords:20|safe }}
+            {% endif %}
+          </p>
+        </div>
+        <div class="mb-2">
+          {% for category in item.categories.all|slice:':5' %}
+              <a href="{% url 'website:company_collection' category.slug %}" class="btn btn-light btn-xs my-1">{{ category.name }}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
